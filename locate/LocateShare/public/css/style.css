@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #00bfff;
+}
+
+h2 {
+  text-align: center;
+  width: 80%;
+  margin: 3% 10% 1% auto;
+  border-bottom: 3px solid #00bfff;
+  border-image: linear-gradient(to right, #00bfff 0%, #ffffff 100%);
+  border-image-slice: 1;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border-top: 1px solid #87ceeb;
+  border-bottom: 1px solid #87ceeb;
+  line-height: 1.5;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+span {
+  font-size: 13px;
+  color: red;
+}
+
+table .comment {
+  white-space: normal;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+/* メニューバー */
+header {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  background: white;/*linear-gradient(#696969, #a9a9a9);*/
+}
+
+header .logo {
+  width: 20%;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+header .menus {
+  display: flex;
+  width: 50%;
+  text-align: center;
+}
+
+header .menus .links {
+  width: 25%;
+  text-align: center;
+}
+
+header .logout {
+  width: 15%;
+  text-align: center;
+  margin: 0 0 0 auto;
+}
+
+/*ログインform*/
+.input {
+  width: 60%;
+  padding: 5px;
+  margin: 10% auto 0 auto;
+}
+
+.input .form {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+.textform {
+  width: 70%;
+  padding: 5px;
+}
+
+.submit_button {
+  margin-top: 4%;
+  width: 40%;
+  background-color: teal;
+  color: white;
+  border: 2px solid #20b2aa;
+  border-radius: 3px;
+}
+
+.login_menu {
+  margin-top: 3%;
+}
+
+/*　カラム */
+.main_column {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+}
+/* 画像•地図 */
+.img_column {
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.img_column .detail_img {
+  width: 65%;
+  padding: 5px;
+  margin-top: 3%;
+  box-shadow: 0 5px 10px #87ceeb;
+}
+/* google map API */
+#map {
+  height: 210px;
+  width: 330px;
+  padding: 5px;
+}
+/*詳細画面　項目 */
+.main {
+  flex: 1;
+  text-align: center;
+}
+
+.main table {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.main table tr {
+  height: 55px;
+}
+
+/* index　新着投稿 */
+.arrival {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.arrival_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.arrival_img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrival_img img {
+  border-radius: 4px;
+}
+
+.arrival_content {
+  flex-direction: column;
+}
+
+.arrival_box p {
+  margin: 0;
+}
+
+.arrival h2 {
+  margin-bottom: 0;
+}
+
+.viewmore {
+  margin: 0 auto 5% 5%;
+  border-bottom: 1px solid #00bfff;
+}
+
+/* 投稿画面 = add_locate　*/
+.add_form {
+  width: 70%;
+  margin: 3% auto 0 auto;
+}
+
+.add_form form{
+  text-align: center;
+}
+
+.add_form form th {
+  text-align: center;
+}
+
+.add_form form .text_input {
+  width: 75%;
+}
+
+.notice {
+  font-size: 12px;
+}
+/* follow and favorite */
+.btn_area {
+  width: 90%;
+}
+.off_btn {
+  background: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.follow_btn_on {
+  background: #1e90ff;
+  border: 1px solid #6495ed;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.fav_btn_on {
+  background: orange;
+  border: 1px solid #f4a460;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/*　画像拡大　モーダル　*/
+#graydisplay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%!important;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+}
+
+#graydisplay img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  height: 90%;
+}
+
+/* ページネーション */
+.paginator {
+  text-align: center;
+  padding: 5px;
+}
